@@ -1,0 +1,10 @@
+{
+    "type": "Page",
+    "url": "/documents-page",
+    "title": "Documents Page",
+    "content": [
+        "bla doc 123",
+        "präse doc 456",
+        "read more here 789asd "
+    ]
+}

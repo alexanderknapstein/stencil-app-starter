@@ -1,0 +1,32 @@
+@import "fonts.scss";
+
+@mixin size($size) {
+  font-size: $size + 0px;
+  font-size: ($size / 16) + 0rem;
+}
+
+@mixin lineheight($lineheight) {
+  line-height: $lineheight + 0px;
+  line-height: ($lineheight / 16) + 0rem;
+}
+
+@mixin font-merri-light($size, $lineheight) {
+  font-family: 'Merriweather';
+  @include size($size);
+  @include lineheight($lineheight);
+  font-weight: 300;
+}
+
+@mixin font-merri-regular($size, $lineheight) {
+  font-family: 'Merriweather';
+  @include size($size);
+  @include lineheight($lineheight);
+  font-weight: 400;
+}
+
+@mixin font-merri-bold($size, $lineheight) {
+  font-family: 'Merriweather';
+  @include size($size);
+  @include lineheight($lineheight);
+  font-weight: 700;
+}

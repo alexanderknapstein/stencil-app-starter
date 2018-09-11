@@ -1,0 +1,10 @@
+{
+    "type": "Page",
+    "url": "/demo-page",
+    "title": "Demo Page",
+    "content": [
+        "text 123",
+        "text 456",
+        "text 789"
+    ]
+}

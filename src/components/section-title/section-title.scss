@@ -1,0 +1,28 @@
+p {
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+  border: 1px solid #545250;
+  margin: 0 5px;
+}
+
+p:before,
+p:after {
+  background: #545250;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 400%;
+}
+p:before {
+  right: 100%;
+}
+p:after {
+  left: 100%;
+}
+.container {
+  overflow: hidden;
+  text-align: center;
+}

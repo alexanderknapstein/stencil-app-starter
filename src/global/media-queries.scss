@@ -1,0 +1,16 @@
+// this is typically unused because this is the defaul in mobile first
+@custom-media --small screen and (max-width: 599px);
+// table portrait or phone landscape
+@custom-media --medium screen and (min-width: 600px);
+@custom-media --medium-only screen and (min-width: 600px) and (max-width: 899px);
+// tablet landscape
+@custom-media --large screen and (min-width: 900px);
+@custom-media --large-only screen and (min-width: 900px) and (max-width: 1199px);
+// desktop
+@custom-media --xlarge screen and (min-width: 1200px);
+@custom-media --xlarge-only screen and (min-width: 1200px) and (max-width: 1399px);
+// larger desktop
+@custom-media --xxlarge screen and (min-width: 1400px);
+@custom-media --xxlarge-only screen and (min-width: 1400px) and (max-width: 1799px);
+// >= HD desktop
+@custom-media --xxxlarge screen and (min-width: 1800px);

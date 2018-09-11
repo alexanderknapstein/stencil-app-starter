@@ -1,0 +1,128 @@
+$white: #ffffff;
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+:host([size="small"]),
+.small {
+  height: 10px;
+  width: 10px;
+}
+
+:host([size="small-plus"]),
+.small-plus {
+  height: 15px;
+  width: 15px;
+}
+
+:host([size="medium"]),
+.medium {
+  height: 20px;
+  width: 20px;
+}
+
+:host([size="large"]),
+.large {
+  height: 40px;
+  width: 40px;
+}
+
+:host([active="true"]) {
+  svg, svg * {
+    fill: $white;
+    stroke: $white;
+  }
+}
+
+:host([size="logo"]),
+:host([size="logo-main"]),
+.logo-main,
+.logo {
+  width: 150px;
+  height: 51px;
+  @media (--medium) {
+    width: 287px;
+    height: 54px;
+  }
+}
+
+:host([active="true"]) {
+  svg, svg * {
+    fill: $white;
+    stroke: $white;
+  }
+}
+
+
+
+:host([color="orange"]) {
+  :hover * {
+    fill: var(--primary-color)
+  }
+}
+
+.icon.logo-partner {
+  svg {
+    margin: auto;
+    height: 100%;
+    width: auto;
+    max-width: 90%;
+    opacity: 0.7;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  @media (--small) {
+    width: 100%;
+    margin: 20px 2.5%;
+    height: 50px;
+  }
+  @media (--medium) {
+    width: 100%;
+    margin: 20px 2%;
+    height: 75px;
+  }
+}
+
+.icon.img-how-it-works {
+  height: 100px;
+  max-width: 130px;
+}
+
+.icon.partner-logo {
+  width: 150px;
+  height: 51px;
+  @media (--medium) {
+    width: 287px;
+    height: 54px;
+  }
+}
+
+.icon.footer {
+  width: 30px;
+  height: 30px;
+}
+
+.top-border {
+  border-top: 2px solid var(--primary-color);
+}

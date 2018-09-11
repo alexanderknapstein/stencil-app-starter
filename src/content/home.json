@@ -1,0 +1,96 @@
+{
+    "title": "Helo",
+    "content": [
+        {
+            "type": "hero-teaser",
+            "class": "hero",
+            "title": "B31 im Dialog",
+            "subtitle": "Die Menschen im nördlichen Bodenseeraum sollen entlastet und der Verkehr gebündelt werden.",
+            "text": "Die Straßen entlang der Nordseite des Bodensees sind überlastet. Mit dem Aus- und Neubau der B 31 soll sich die Verkehrssituation dort dauerhaft entspannen. Wenn nach der Ortsumfahrung Friedrichshafen auch der Abschnitt der B 31 im Bereich von Überlingen gebaut ist, wird der Verkehrsdruck zwischen Meersburg und Immenstaad noch einmal zunehmen. Auch hier soll es nun weitergehen, damit die Situation rund um Meersburg, Hagnau, Stetten und Immenstaad entschärft werden kann. Das Ziel: Staus und verlärmte Wohngebiete sollen in dieser landschaftlich besonders schönen Region der Vergangenheit angehören.",
+            "changed": "25.09.2017",
+            "images": [
+                {
+                    "_type": "image",
+                    "title": "",
+                    "description": "FOTO: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+                    "url": "https://via.placeholder.com/700x300",
+                    "srcset": [
+                        "https://via.placeholder.com/350x150",
+                        "https://via.placeholder.com/700x300",
+                        "https://via.placeholder.com/1400x600"
+                    ]
+                },
+                {
+                    "_type": "image",
+                    "title": "",
+                    "description": "FOTO: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+                    "url": "https://via.placeholder.com/700x300",
+                    "srcset": [
+                        "https://via.placeholder.com/350x150",
+                        "https://via.placeholder.com/700x300",
+                        "https://via.placeholder.com/1400x600"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "teaser",
+            "class": "",
+            "title": "1 Neue Bürgerbefragung online!",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+            "changed": "25.09.2017",
+            "images": [
+                {
+                    "_type": "image",
+                    "title": "",
+                    "description": "FOTO: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+                    "url": "https://via.placeholder.com/700x300",
+                    "srcset": [
+                        "https://via.placeholder.com/350x150",
+                        "https://via.placeholder.com/700x300",
+                        "https://via.placeholder.com/1400x600"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "teaser",
+            "class": "",
+            "title": "2 Neue Bürgerbefragung online!",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+            "changed": "25.09.2017"
+        },
+        {
+            "type": "teaser",
+            "class": "",
+            "title": "3 Neue Bürgerbefragung online!",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+            "changed": "25.09.2017"
+        },
+        {
+            "type": "teaser",
+            "class": "",
+            "title": "4 Neue Bürgerbefragung online!",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+            "changed": "25.09.2017"
+        },
+        {
+            "type": "teaser",
+            "class": "",
+            "title": "5 Neue Bürgerbefragung online!",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+            "changed": "25.09.2017"
+        }
+    ],
+    "documents": [
+        {
+            "type": "document",
+            "title": "Präsentation Bürgerforum Heidelberg",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper.",
+            "changed": "25.09.2017",
+            "tags": [
+                "witzig", "aufregend", "toll"
+            ]
+        }
+    ]
+}

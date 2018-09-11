@@ -1,0 +1,20 @@
+
+
+:host {
+}
+.teaser {
+  // padding-right: .5rem;
+  // padding-left: .5rem;
+  padding: 0 10px 0 0;
+
+  &.hero {
+    border-top: 1px solid #545250;
+    border-bottom: 8px solid #545250;
+  }
+  &__title {
+    .hero & {
+      // @include font-merri-bold(43, 50);
+    }
+  }
+  
+}

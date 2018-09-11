@@ -1,0 +1,10 @@
+// @import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto');
+
+:host {
+  font-family: system-ui, 'sans-serif';
+  font-family: 'Roboto', sans-serif;
+
+  h1, h2, h3, h4, .title, .subtitle {
+    font-family: 'Merriweather', serif;
+  }
+}
