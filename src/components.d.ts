@@ -29,36 +29,174 @@ import '@stencil/router';
 import '@stencil/state-tunnel';
 
 import {
+  IconRegistryService,
+} from './components/icon/resources/icon-registry-service';
+import {
   MatchResults,
+  RouterHistory,
 } from '@stencil/router';
 
 declare global {
 
   namespace StencilComponents {
-    interface AppHome {
-
+    interface BodyComponent {
+      'data': any;
     }
   }
 
-  interface HTMLAppHomeElement extends StencilComponents.AppHome, HTMLStencilElement {}
+  interface HTMLBodyComponentElement extends StencilComponents.BodyComponent, HTMLStencilElement {}
 
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  var HTMLBodyComponentElement: {
+    prototype: HTMLBodyComponentElement;
+    new (): HTMLBodyComponentElement;
   };
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
+    'body-component': HTMLBodyComponentElement;
   }
   interface ElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
+    'body-component': HTMLBodyComponentElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-home': JSXElements.AppHomeAttributes;
+      'body-component': JSXElements.BodyComponentAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppHomeAttributes extends HTMLAttributes {
+    export interface BodyComponentAttributes extends HTMLAttributes {
+      'data'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface ComponentLoader {
+      'data': any;
+      'doc': string;
+    }
+  }
+
+  interface HTMLComponentLoaderElement extends StencilComponents.ComponentLoader, HTMLStencilElement {}
+
+  var HTMLComponentLoaderElement: {
+    prototype: HTMLComponentLoaderElement;
+    new (): HTMLComponentLoaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    'component-loader': HTMLComponentLoaderElement;
+  }
+  interface ElementTagNameMap {
+    'component-loader': HTMLComponentLoaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'component-loader': JSXElements.ComponentLoaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ComponentLoaderAttributes extends HTMLAttributes {
+      'data'?: any;
+      'doc'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface DocumentTeaser {
+      'data': any;
+    }
+  }
+
+  interface HTMLDocumentTeaserElement extends StencilComponents.DocumentTeaser, HTMLStencilElement {}
+
+  var HTMLDocumentTeaserElement: {
+    prototype: HTMLDocumentTeaserElement;
+    new (): HTMLDocumentTeaserElement;
+  };
+  interface HTMLElementTagNameMap {
+    'document-teaser': HTMLDocumentTeaserElement;
+  }
+  interface ElementTagNameMap {
+    'document-teaser': HTMLDocumentTeaserElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'document-teaser': JSXElements.DocumentTeaserAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface DocumentTeaserAttributes extends HTMLAttributes {
+      'data'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface DocumentsList {
+      'data': any;
+    }
+  }
+
+  interface HTMLDocumentsListElement extends StencilComponents.DocumentsList, HTMLStencilElement {}
+
+  var HTMLDocumentsListElement: {
+    prototype: HTMLDocumentsListElement;
+    new (): HTMLDocumentsListElement;
+  };
+  interface HTMLElementTagNameMap {
+    'documents-list': HTMLDocumentsListElement;
+  }
+  interface ElementTagNameMap {
+    'documents-list': HTMLDocumentsListElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'documents-list': JSXElements.DocumentsListAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface DocumentsListAttributes extends HTMLAttributes {
+      'data'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface ErrorComponent {
+
+    }
+  }
+
+  interface HTMLErrorComponentElement extends StencilComponents.ErrorComponent, HTMLStencilElement {}
+
+  var HTMLErrorComponentElement: {
+    prototype: HTMLErrorComponentElement;
+    new (): HTMLErrorComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'error-component': HTMLErrorComponentElement;
+  }
+  interface ElementTagNameMap {
+    'error-component': HTMLErrorComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'error-component': JSXElements.ErrorComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ErrorComponentAttributes extends HTMLAttributes {
 
     }
   }
@@ -68,31 +206,446 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface AppProfile {
+    interface FileComponent {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data': any;
+      /**
+       * Here we provide the image data to show an image inside the teaser
+       */
+      'imageData': any;
+    }
+  }
+
+  interface HTMLFileComponentElement extends StencilComponents.FileComponent, HTMLStencilElement {}
+
+  var HTMLFileComponentElement: {
+    prototype: HTMLFileComponentElement;
+    new (): HTMLFileComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'file-component': HTMLFileComponentElement;
+  }
+  interface ElementTagNameMap {
+    'file-component': HTMLFileComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'file-component': JSXElements.FileComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FileComponentAttributes extends HTMLAttributes {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data'?: any;
+      /**
+       * Here we provide the image data to show an image inside the teaser
+       */
+      'imageData'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface HeroTeaserComponent {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data': any;
+      /**
+       * Here we provide the image data to show an image inside the teaser
+       */
+      'imageData': any;
+    }
+  }
+
+  interface HTMLHeroTeaserComponentElement extends StencilComponents.HeroTeaserComponent, HTMLStencilElement {}
+
+  var HTMLHeroTeaserComponentElement: {
+    prototype: HTMLHeroTeaserComponentElement;
+    new (): HTMLHeroTeaserComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'hero-teaser-component': HTMLHeroTeaserComponentElement;
+  }
+  interface ElementTagNameMap {
+    'hero-teaser-component': HTMLHeroTeaserComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'hero-teaser-component': JSXElements.HeroTeaserComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface HeroTeaserComponentAttributes extends HTMLAttributes {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data'?: any;
+      /**
+       * Here we provide the image data to show an image inside the teaser
+       */
+      'imageData'?: any;
+      'onToggleOpen'?: (event: CustomEvent) => void;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface IlIcon {
+      'active': boolean;
+      /**
+       * Names of additional classes applied to the icon, separated by space
+       */
+      'classes': string;
+      'color': string;
+      'fill': string;
+      /**
+       * Name of the icon to get from the registry
+       */
+      'name': string;
+      /**
+       * Size category to apply to the icon as css-class
+       */
+      'size': string;
+      /**
+       * If url is passed as property, an additional property called "target" can be passed to redirect the user to a specific target location, default is the same frame where the link was clicked.
+       */
+      'target': string;
+      /**
+       * If url is passed as property, the icon inside the div is wrapped into an anchor to redirect to the given url.
+       */
+      'url': string;
+    }
+  }
+
+  interface HTMLIlIconElement extends StencilComponents.IlIcon, HTMLStencilElement {}
+
+  var HTMLIlIconElement: {
+    prototype: HTMLIlIconElement;
+    new (): HTMLIlIconElement;
+  };
+  interface HTMLElementTagNameMap {
+    'il-icon': HTMLIlIconElement;
+  }
+  interface ElementTagNameMap {
+    'il-icon': HTMLIlIconElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'il-icon': JSXElements.IlIconAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface IlIconAttributes extends HTMLAttributes {
+      'active'?: boolean;
+      /**
+       * Names of additional classes applied to the icon, separated by space
+       */
+      'classes'?: string;
+      'color'?: string;
+      'fill'?: string;
+      /**
+       * Name of the icon to get from the registry
+       */
+      'name'?: string;
+      /**
+       * Size category to apply to the icon as css-class
+       */
+      'size'?: string;
+      /**
+       * If url is passed as property, an additional property called "target" can be passed to redirect the user to a specific target location, default is the same frame where the link was clicked.
+       */
+      'target'?: string;
+      /**
+       * If url is passed as property, the icon inside the div is wrapped into an anchor to redirect to the given url.
+       */
+      'url'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface IlIconRegistry {
+      'create': () => Promise<IconRegistryService>;
+    }
+  }
+
+  interface HTMLIlIconRegistryElement extends StencilComponents.IlIconRegistry, HTMLStencilElement {}
+
+  var HTMLIlIconRegistryElement: {
+    prototype: HTMLIlIconRegistryElement;
+    new (): HTMLIlIconRegistryElement;
+  };
+  interface HTMLElementTagNameMap {
+    'il-icon-registry': HTMLIlIconRegistryElement;
+  }
+  interface ElementTagNameMap {
+    'il-icon-registry': HTMLIlIconRegistryElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'il-icon-registry': JSXElements.IlIconRegistryAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface IlIconRegistryAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface ImageComponent {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data': any;
+      'urlprefix': any;
+    }
+  }
+
+  interface HTMLImageComponentElement extends StencilComponents.ImageComponent, HTMLStencilElement {}
+
+  var HTMLImageComponentElement: {
+    prototype: HTMLImageComponentElement;
+    new (): HTMLImageComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'image-component': HTMLImageComponentElement;
+  }
+  interface ElementTagNameMap {
+    'image-component': HTMLImageComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'image-component': JSXElements.ImageComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ImageComponentAttributes extends HTMLAttributes {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data'?: any;
+      'urlprefix'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface NodeFull {
+      'data': any;
+    }
+  }
+
+  interface HTMLNodeFullElement extends StencilComponents.NodeFull, HTMLStencilElement {}
+
+  var HTMLNodeFullElement: {
+    prototype: HTMLNodeFullElement;
+    new (): HTMLNodeFullElement;
+  };
+  interface HTMLElementTagNameMap {
+    'node-full': HTMLNodeFullElement;
+  }
+  interface ElementTagNameMap {
+    'node-full': HTMLNodeFullElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'node-full': JSXElements.NodeFullAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface NodeFullAttributes extends HTMLAttributes {
+      'data'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageComponent {
+      'doc': string;
+    }
+  }
+
+  interface HTMLPageComponentElement extends StencilComponents.PageComponent, HTMLStencilElement {}
+
+  var HTMLPageComponentElement: {
+    prototype: HTMLPageComponentElement;
+    new (): HTMLPageComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-component': HTMLPageComponentElement;
+  }
+  interface ElementTagNameMap {
+    'page-component': HTMLPageComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-component': JSXElements.PageComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageComponentAttributes extends HTMLAttributes {
+      'doc'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageNodePage {
+      'data': any;
+    }
+  }
+
+  interface HTMLPageNodePageElement extends StencilComponents.PageNodePage, HTMLStencilElement {}
+
+  var HTMLPageNodePageElement: {
+    prototype: HTMLPageNodePageElement;
+    new (): HTMLPageNodePageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-node-page': HTMLPageNodePageElement;
+  }
+  interface ElementTagNameMap {
+    'page-node-page': HTMLPageNodePageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-node-page': JSXElements.PageNodePageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageNodePageAttributes extends HTMLAttributes {
+      'data'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageNodeTreePage {
+      'data': any;
+    }
+  }
+
+  interface HTMLPageNodeTreePageElement extends StencilComponents.PageNodeTreePage, HTMLStencilElement {}
+
+  var HTMLPageNodeTreePageElement: {
+    prototype: HTMLPageNodeTreePageElement;
+    new (): HTMLPageNodeTreePageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-node-tree-page': HTMLPageNodeTreePageElement;
+  }
+  interface ElementTagNameMap {
+    'page-node-tree-page': HTMLPageNodeTreePageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-node-tree-page': JSXElements.PageNodeTreePageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageNodeTreePageAttributes extends HTMLAttributes {
+      'data'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface SectionTitle {
+
+    }
+  }
+
+  interface HTMLSectionTitleElement extends StencilComponents.SectionTitle, HTMLStencilElement {}
+
+  var HTMLSectionTitleElement: {
+    prototype: HTMLSectionTitleElement;
+    new (): HTMLSectionTitleElement;
+  };
+  interface HTMLElementTagNameMap {
+    'section-title': HTMLSectionTitleElement;
+  }
+  interface ElementTagNameMap {
+    'section-title': HTMLSectionTitleElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'section-title': JSXElements.SectionTitleAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SectionTitleAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface SiteLoader {
+      'history': RouterHistory;
       'match': MatchResults;
+      'urls': string[];
     }
   }
 
-  interface HTMLAppProfileElement extends StencilComponents.AppProfile, HTMLStencilElement {}
+  interface HTMLSiteLoaderElement extends StencilComponents.SiteLoader, HTMLStencilElement {}
 
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  var HTMLSiteLoaderElement: {
+    prototype: HTMLSiteLoaderElement;
+    new (): HTMLSiteLoaderElement;
   };
   interface HTMLElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
+    'site-loader': HTMLSiteLoaderElement;
   }
   interface ElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
+    'site-loader': HTMLSiteLoaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-profile': JSXElements.AppProfileAttributes;
+      'site-loader': JSXElements.SiteLoaderAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppProfileAttributes extends HTMLAttributes {
+    export interface SiteLoaderAttributes extends HTMLAttributes {
+      'history'?: RouterHistory;
       'match'?: MatchResults;
+      'urls'?: string[];
     }
   }
 }
@@ -101,31 +654,144 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface AppRoot {
+    interface SiteMenu {
 
     }
   }
 
-  interface HTMLAppRootElement extends StencilComponents.AppRoot, HTMLStencilElement {}
+  interface HTMLSiteMenuElement extends StencilComponents.SiteMenu, HTMLStencilElement {}
 
-  var HTMLAppRootElement: {
-    prototype: HTMLAppRootElement;
-    new (): HTMLAppRootElement;
+  var HTMLSiteMenuElement: {
+    prototype: HTMLSiteMenuElement;
+    new (): HTMLSiteMenuElement;
   };
   interface HTMLElementTagNameMap {
-    'app-root': HTMLAppRootElement;
+    'site-menu': HTMLSiteMenuElement;
   }
   interface ElementTagNameMap {
-    'app-root': HTMLAppRootElement;
+    'site-menu': HTMLSiteMenuElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-root': JSXElements.AppRootAttributes;
+      'site-menu': JSXElements.SiteMenuAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppRootAttributes extends HTMLAttributes {
+    export interface SiteMenuAttributes extends HTMLAttributes {
 
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface StencilSite {
+
+    }
+  }
+
+  interface HTMLStencilSiteElement extends StencilComponents.StencilSite, HTMLStencilElement {}
+
+  var HTMLStencilSiteElement: {
+    prototype: HTMLStencilSiteElement;
+    new (): HTMLStencilSiteElement;
+  };
+  interface HTMLElementTagNameMap {
+    'stencil-site': HTMLStencilSiteElement;
+  }
+  interface ElementTagNameMap {
+    'stencil-site': HTMLStencilSiteElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'stencil-site': JSXElements.StencilSiteAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface StencilSiteAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface TeaserComponent {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data': any;
+      /**
+       * Here we provide the image data to show an image inside the teaser
+       */
+      'imageData': any;
+    }
+  }
+
+  interface HTMLTeaserComponentElement extends StencilComponents.TeaserComponent, HTMLStencilElement {}
+
+  var HTMLTeaserComponentElement: {
+    prototype: HTMLTeaserComponentElement;
+    new (): HTMLTeaserComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'teaser-component': HTMLTeaserComponentElement;
+  }
+  interface ElementTagNameMap {
+    'teaser-component': HTMLTeaserComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'teaser-component': JSXElements.TeaserComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TeaserComponentAttributes extends HTMLAttributes {
+      /**
+       * The data property is the content structure which is needed to fill into the html elements inside the render() function
+       */
+      'data'?: any;
+      /**
+       * Here we provide the image data to show an image inside the teaser
+       */
+      'imageData'?: any;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface TeaserGroup {
+      'data': any;
+    }
+  }
+
+  interface HTMLTeaserGroupElement extends StencilComponents.TeaserGroup, HTMLStencilElement {}
+
+  var HTMLTeaserGroupElement: {
+    prototype: HTMLTeaserGroupElement;
+    new (): HTMLTeaserGroupElement;
+  };
+  interface HTMLElementTagNameMap {
+    'teaser-group': HTMLTeaserGroupElement;
+  }
+  interface ElementTagNameMap {
+    'teaser-group': HTMLTeaserGroupElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'teaser-group': JSXElements.TeaserGroupAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TeaserGroupAttributes extends HTMLAttributes {
+      'data'?: any;
     }
   }
 }
