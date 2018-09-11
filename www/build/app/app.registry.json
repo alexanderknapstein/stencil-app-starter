@@ -1,0 +1,79 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "corePolyfilled": "es5-build-disabled.js",
+  "global": "app.global.js",
+  "core": "app.core.js",
+  "components": {
+    "body-component": {
+      "$": "body-component"
+    },
+    "component-loader": {
+      "$": "component-loader"
+    },
+    "document-teaser": {
+      "$": "document-teaser"
+    },
+    "documents-list": {
+      "$": "document-teaser"
+    },
+    "error-component": {
+      "$": "error-component"
+    },
+    "file-component": {
+      "$": "file-component"
+    },
+    "hero-teaser-component": {
+      "$": "hero-teaser-component"
+    },
+    "il-icon": {
+      "$": "il-icon"
+    },
+    "il-icon-registry": {
+      "$": "il-icon-registry"
+    },
+    "image-component": {
+      "$": "hero-teaser-component"
+    },
+    "node-full": {
+      "$": "node-full"
+    },
+    "page-component": {
+      "$": "component-loader"
+    },
+    "page-node-page": {
+      "$": "page-node-page"
+    },
+    "page-node-tree-page": {
+      "$": "page-node-tree-page"
+    },
+    "section-title": {
+      "$": "hero-teaser-component"
+    },
+    "site-loader": {
+      "$": "site-loader"
+    },
+    "site-menu": {
+      "$": "site-menu"
+    },
+    "stencil-route": {
+      "$": "site-menu"
+    },
+    "stencil-route-link": {
+      "$": "stencil-route-link"
+    },
+    "stencil-router": {
+      "$": "site-menu"
+    },
+    "stencil-site": {
+      "$": "hero-teaser-component"
+    },
+    "teaser-component": {
+      "$": "teaser-component"
+    },
+    "teaser-group": {
+      "$": "page-node-tree-page"
+    }
+  }
+}
